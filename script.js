@@ -268,7 +268,7 @@ function fetchNotes() {
     };
 
     // Create a script tag to load the data (bypasses CORS)
-    const url = `https://docs.google.com/spreadsheets/d/${CONFIG.SHEET_ID}/gviz/tq?tqx=out:json;responseHandler=${callbackName}`;
+    const url = `https://docs.google.com/spreadsheets/d/${CONFIG.SHEET_ID}/gviz/tq?tqx=out:json;responseHandler:${callbackName}`;
     const scriptEl = document.createElement('script');
     scriptEl.src = url;
 
